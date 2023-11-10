@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Irish+Grover&family=Josefin+Slab:wght@100&family=Knewave&family=Lilita+One&family=Paprika&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #010314;
+}
+
+.Top-container {
+  width: 95%;
+  height: fit-content;
+  background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #6b7280 69.27%, #fff 100%);
+  border-radius: 0 0 20px 20px;
+  margin: auto;
+}
+
+.navbar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+}
+.nav-logo img {
+  margin-right: 10px;
+}
+.nav-logo p {
+  font-family: "Inter", sans-serif;
+  background: -webkit-linear-gradient(50deg, #fff, #737587);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.nav-center {
+  border: 1px solid #9e9e9e;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.nav-center a {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+}
+
+.nav-end button {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.nav-end svg {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 930px) {
+  .nav-center {
+    display: none;
+  }
+}
+
+.Top-content {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+}
+
+.big-text {
+  margin-bottom: 15px;
+}
+
+.big-text p {
+  font-size: 80px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.big-text span {
+  font-size: 80px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(50deg, #fff, #737587);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+.desc-text {
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+.desc-text p {
+  font-weight: 600;
+  color: #b3b3b3;
+  font-family: "Inter", sans-serif;
+}
+
+.button-text button {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Top-content {
+    width: 80%;
+  }
+
+  .desc-text {
+    max-width: 90%;
+  }
+}
+
+.island-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+  color: #ffffff;
+  margin: auto;
+  font-size: 30px;
+}
+
+.island-top-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* Start Font daerah top */
+.island-top-text .Jawa {
+  font-family: "Irish Grover", sans-serif;
+}
+
+.island-top-text .Sumatra {
+  font-family: "Akaya Kanadaka", sans-serif;
+}
+
+.island-top-text .Kalimantan {
+  font-family: "Knewave", sans-serif;
+}
+
+.island-top-text .Sulawesi {
+  font-family: "Lilita One", sans-serif;
+}
+
+/* Close Font daerah top */
+.island-bottom-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.island-bottom-text .Maluku {
+  font-family: "Josefin Slab", sans-serif;
+}
+
+.island-bottom-text .Papua {
+  font-family: "Paprika", sans-serif;
+}
