@@ -85,6 +85,21 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .nav-logo p {
+    font-size: 25px;
+  }
+  .nav-logo img {
+    margin-right: 5px;
+  }
+  .nav-end .g-icon {
+    display: none;
+  }
+  .nav-end button {
+    margin-right: 0px;
+  }
+}
+
 .Top-content {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -132,7 +147,10 @@ body {
   font-size: 15px;
   padding: 15px 30px 15px 30px;
   border-radius: 40px;
-  margin-right: 20px;
+}
+
+.button-text button svg {
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -142,6 +160,36 @@ body {
 
   .desc-text {
     max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Top-content {
+    padding-bottom: 100px;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .big-text p {
+    font-size: 65px;
+  }
+
+  .big-text span {
+    font-size: 65px;
+  }
+  .desc-text {
+    max-width: 100%;
+  }
+
+  .desc-text p {
+    font-size: 15px;
+  }
+  .button-text button {
+    font-size: 14px;
+    padding: 15px 30px 15px 30px;
+  }
+  .button-text button svg {
+    margin-left: 5px;
   }
 }
 
