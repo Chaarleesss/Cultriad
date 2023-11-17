@@ -356,6 +356,11 @@ body {
   margin-bottom: 40px;
 }
 
+/* .abt-btn .b-tentang.active {
+  color: #1d2228;
+  background-color: #ffffff;
+} */
+
 .manfaat-display {
   display: none;
 }
