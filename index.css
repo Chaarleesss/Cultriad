@@ -5,6 +5,7 @@
   padding: 0;
   border: none;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -355,7 +356,31 @@ body {
   margin-bottom: 40px;
 }
 
+.manfaat-display {
+  display: none;
+}
+.background-display {
+  display: none;
+}
+
 .about-content {
+  display: flex;
+  padding: 100px;
+  border-radius: 15px;
+  border: 1px solid #9e9e9e;
+  height: fit-content;
+  align-items: center;
+}
+
+.manfaat-content {
+  display: flex;
+  padding: 100px;
+  border-radius: 15px;
+  border: 1px solid #9e9e9e;
+  height: fit-content;
+  align-items: center;
+}
+.background-content {
   display: flex;
   padding: 100px;
   border-radius: 15px;
@@ -410,6 +435,22 @@ body {
     max-width: 100%;
   }
   .about-content {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  .manfaat-content {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  .background-content {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;

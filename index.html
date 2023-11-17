@@ -16,10 +16,10 @@
         </div>
         <div class="nav-center">
           <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Docs</a>
-          <a href="">Contact</a>
-          <a href="">Provinsi</a>
+          <a href="#aboutt">About</a>
+          <a href="#kenapa">Docs</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="nav-end">
           <button>
@@ -72,26 +72,54 @@
       </div>
     </div>
     <div class="Bottom-container">
-      <div class="about-container">
+      <div class="about-container" id="aboutt">
         <div class="purpose-text">
           <p>Mengapa Cultriad itu diciptakan dan apa tujuannya?</p>
         </div>
         <div class="abt-btn">
-          <button>Tujuan</button>
-          <button>Manfaat</button>
-          <button>Background</button>
+          <button id="btn_tujuan">Tentang</button>
+          <button id="btn_manfaat">Manfaat</button>
+          <button id="btn_background">Background</button>
         </div>
-        <div class="about-content">
-          <div class="main-icon"><img src="./Assets/fireworks-2.png" alt="" /></div>
-          <div class="about-main">
-            <div class="a-headline">About Cultriad</div>
-            <div class="a-desc"><span>Cultriad</span> adalah website yang memaparkan informasi yang memaparkan kekayaan budaya Indonesia dalam berbagai aspek, termasuk informasi umum, budaya, kuliner, dan destinasi wisata.</div>
-            <div class="a-button"><button>Read More</button></div>
+        <div class="about-display" id="about">
+          <div class="about-content">
+            <div class="main-icon"><img src="./Assets/fireworks-2.png" alt="" /></div>
+            <div class="about-main">
+              <div class="a-headline">About Cultriad</div>
+              <div class="a-desc"><span>Cultriad</span> adalah website yang memaparkan informasi yang memaparkan kekayaan budaya Indonesia dalam berbagai aspek, termasuk informasi umum, budaya, kuliner, dan destinasi wisata.</div>
+              <div class="a-button"><button>Read More</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="manfaat-display" id="manfaat">
+          <div class="manfaat-content">
+            <div class="main-icon"><img src="./Assets/fireworks-2.png" alt="" /></div>
+            <div class="about-main">
+              <div class="a-headline">Manfaat Cultriad</div>
+              <div class="a-desc">
+                <span>Cultriad</span>dengan memanfaatkan media informasi sekarang yaitu web yang memudahkan usernya dalam mengakses dan menggunakan website Cultriad sebagai media informasi mereka untuk budayabudaya Indonesia. .
+              </div>
+              <div class="a-button"><button>Read More</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="background-display" id="background">
+          <div class="background-content">
+            <div class="main-icon"><img src="./Assets/fireworks-2.png" alt="" /></div>
+            <div class="about-main">
+              <div class="a-headline">Background Cultriad</div>
+              <div class="a-desc">
+                <span>Cultriad</span> Dimulai dari lingkungan sekitar kita yang mulai melupakan budaya budaya indonesia dan anak anak muda sekarang lebih fokus ke sosial media dan karna itulah kita memanfaat teknologi sekarang.
+              </div>
+              <div class="a-button"><button>Read More</button></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="con_4">
+    <div class="con_4" id="kenapa">
       <div class="heading_cont_4">
         <div class="title_cont_4">
           <span>Kenapa Cultriad?</span>
@@ -155,7 +183,7 @@
         </div>
       </div>
     </div>
-    <div class="team-title">
+    <div class="team-title" id="team">
       <p>Team Kami</p>
       <span>Di balik pengembangan Cultriad</span>
     </div>
@@ -248,7 +276,7 @@
         </div>
       </div>
     </div>
-    <div class="footers">
+    <div class="footers" id="contact">
       <footer>
         <div class="row">
           <div class="col col1" data-aos="fade-right">
@@ -291,5 +319,32 @@
         </div>
       </footer>
     </div>
+    <script>
+      var btn_tujuan = document.getElementById("btn_tujuan");
+      var btn_manfaat = document.getElementById("btn_manfaat");
+      var btn_background = document.getElementById("btn_background");
+
+      var about = document.getElementById("about");
+      var manfaat = document.getElementById("manfaat");
+      var background = document.getElementById("background");
+
+      btn_tujuan.addEventListener("click", () => {
+        about.style.display = "block";
+        manfaat.style.display = "none";
+        background.style.display = "none";
+      });
+
+      btn_manfaat.addEventListener("click", () => {
+        about.style.display = "none";
+        manfaat.style.display = "block";
+        background.style.display = "none";
+      });
+
+      btn_background.addEventListener("click", () => {
+        about.style.display = "none";
+        manfaat.style.display = "none";
+        background.style.display = "block";
+      });
+    </script>
   </body>
 </html>
