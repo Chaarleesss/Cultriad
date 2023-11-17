@@ -7,111 +7,348 @@
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
-      <nav>
-        <div class="logo">
-          <img src="../Assets/fireworks 1.png" alt="" />
-          <p>Cultriad</p>
-        </div>
+        <nav>
+          <div class="logo">
+            <img src="../Assets/fireworks 1.png" alt="" />
+            <p>Cultriad</p>
+          </div>
+  
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Provinsi</a></li>
+            <input
+              type="text"
+              class="message-search"
+              id="text-to-search"
+              placeholder="Search Documentation..."
+            />
 
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Provinsi</a></li>
-          <input type="text" class="message-search" id="text-to-search" placeholder="Search Documentation..." />
-
-          <!-- <button onClick="search(fox)" id="button"> -->
-
-          <img src="../Assets/github 1.png" alt="" />
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="mobile-nav">
-      <p>kocak</p>
-      <p class="navgat">Provinsi</p>
-      <div class="mobile-content">
-        <div class="menu">
-          <p>Sumatra</p>
-          <ul>
-            <li><a href="">Aceh</a></li>
-            <li><a href="">Sumatra Utara</a></li>
-            <li><a href="">Sumatra Barat</a></li>
-            <li><a href="">Riau</a></li>
-            <li><a href="">Kepulauan Riau</a></li>
-            <li><a href="">Jambi</a></li>
-            <li><a href="">Sumatra Selatan</a></li>
-            <li><a href="">Bengkulu</a></li>
-            <li><a href="">Kepulauan Bangka Belitung</a></li>
-            <li><a href="">Lampung</a></li>
+            <!-- <button onClick="search(fox)" id="button"> -->
+            
+            
+            <img src="../Assets/github 1.png" alt="" />
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
           </ul>
-        </div>
-        <div class="menu">
-          <p>Jawa</p>
-          <ul>
-            <li><a href="">Banten</a></li>
-            <li><a href="">DKI Jakarta</a></li>
-            <li><a href="">Jawa Barat</a></li>
-            <li><a href="">Jawa Tengah</a></li>
-            <li><a href="">DI Yogyakarta</a></li>
-            <li><a href="">Jambi</a></li>
-            <li><a href="">Jawa Timur</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <p>Nusa Tenggara</p>
-          <ul>
-            <li><a href="">Bali</a></li>
-            <li><a href="">Nusa Tenggara Barat</a></li>
-            <li><a href="">Nusa Tenggara Timur</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <p>Kalimantan</p>
-          <ul>
-            <li><a href="">Kalimantan Barat</a></li>
-            <li><a href="">Kalimantan Tengah</a></li>
-            <li><a href="">Kalimantan Selatan</a></li>
-            <li><a href="">Kalimantan Timur</a></li>
-            <li><a href="">Kalimantan Utara</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <p>Sulawesi</p>
-          <ul>
-            <li><a href="">Sulawesi Utara</a></li>
-            <li><a href="">Sulawesi Tengah</a></li>
-            <li><a href="">Sulawesin Selatan</a></li>
-            <li><a href="">Gorontalo</a></li>
-            <li><a href="">Sulawesi Barat</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <p>Maluku</p>
-          <ul>
-            <li><a href="">Maluku </a></li>
-            <li><a href="">Maluku Utara</a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <p>Papua</p>
-          <ul>
-            <li><a href="">Papua</a></li>
-            <li><a href="">Papua Barat</a></li>
-          </ul>
-        </div>
+        </nav>
       </div>
 
-      <div class="footer-mobile"></div>
+      <div class="mobile-nav">
+        <p>kocak</p>
+        <p class="navgat">Provinsi</p>
+          <div class="mobile-content">
+            <div class="menu">
+              <p>Sumatra</p>
+              <ul>
+                <li><a onclick="aceh()" id="clicks" href="#clicks" class="menu1">Aceh</a></li>
+                  <div class="dropdown" id="on-page">
+                    <li><a href=""># Informasi Umum</a></li>
+                    <li><a href=""># Budaya</a></li>
+                    <li><a href=""># Kuliner</a></li>
+                    <li><a href=""># Destinasi Wisata</a></li>
+                  </div>
+
+                <li><a href="#clicks" id="clicks" onclick="sumut()">Sumatra Utara</a></li>
+                <div class="dropdown" id="sumut">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#clicks" id="clicks" onclick="sumbat()">Sumatra Barat</a></li>
+                <div class="dropdown" id="sumbat">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#clicks" id="clicks" onclick="riau()">Riau</a></li>
+                <div class="dropdown" id="riau">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+                
+                <li><a href="#clicks" id="clicks" onclick="kepulauan()">Kepulauan Riau</a></li>
+                <div class="dropdown" id="kepulauan">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#clicks" id="clicks" onclick="jambi()">Jambi</a></li>
+                <div class="dropdown" id="jambi">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#clicks" id="clicks" onclick="sumsel()">Sumatra Selatan</a></li>
+                <div class="dropdown" id="sumsel">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#clicks" id="clicks" onclick="bengkulu()">Bengkulu</a></li>
+                <div class="dropdown" id="bengkulu">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+                
+                <li><a href="#clicks" id="clicks" onclick="bangka()">Kepulauan Bangka Belitung</a></li>
+                <div class="dropdown" id="bangka">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+                
+                <li><a href="#akhir1" id="akhir1" onclick="lampung()">Lampung</a></li>
+                <div class="dropdown" id="lampung">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Jawa</p>
+              <ul>
+                <li><a href="#aca" id="aca" onclick="banten()">Banten</a></li>
+                <div class="dropdown" id="banten">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca" id="aca" onclick="jakarta()">DKI Jakarta</a></li>
+                <div class="dropdown" id="jakarta">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca" id="aca" onclick="jabar()">Jawa Barat</a></li>
+                <div class="dropdown" id="jabar">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca" id="aca" onclick="jateng()">Jawa Tengah</a></li>
+                <div class="dropdown" id="jateng">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca" id="aca" onclick="yogya()">DI Yogyakarta</a></li>
+                <div class="dropdown" id="yogya">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir2" id="akhir2" onclick="jatim()">Jawa Timur</a></li>
+                <div class="dropdown" id="jatim">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Nusa Tenggara</p>
+              <ul>
+                <li><a href="#aca2" id="aca2" onclick="bali()">Bali</a></li>
+                <div class="dropdown" id="bali">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca2" id="aca2" onclick="ntb()">Nusa Tenggara Barat</a></li>
+                <div class="dropdown" id="ntb">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir3" id="akhir3" onclick="ntt()">Nusa Tenggara Timur</li>
+                  <div class="dropdown" id="ntt">
+                    <li><a href=""># Informasi Umum</a></li>
+                    <li><a href=""># Budaya</a></li>
+                    <li><a href=""># Kuliner</a></li>
+                    <li><a href=""># Destinasi Wisata</a></li>
+                  </div>
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Kalimantan</p>
+              <ul>
+                <li><a href="#aca3" id="aca3" onclick="kalbar()">Kalimantan Barat</a></li>
+                <div class="dropdown" id="kalbar">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca3" id="aca3" onclick="kalteng()">Kalimantan Tengah</a></li>
+                <div class="dropdown" id="kalteng">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca3" id="aca3" onclick="kalsel()">Kalimantan Selatan</a></li>
+                <div class="dropdown" id="kalsel">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca3" id="aca3" onclick="kaltim()">Kalimantan Timur</a></li>
+                <div class="dropdown" id="kaltim">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir4" id="akhir4" onclick="kalut()">Kalimantan Utara</a></li>
+                <div class="dropdown" id="kalut">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Sulawesi</p>
+              <ul>
+                <li><a href="#aca4" id="aca4" onclick="sulut()">Sulawesi Utara</a></li>
+                <div class="dropdown" id="sulut">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca4" id="aca4" onclick="sulteng()">Sulawesi Tengah</a></li>
+                <div class="dropdown" id="sulteng">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca4" id="aca4" onclick="sulsel()">Sulawesin Selatan</a></li>
+                <div class="dropdown" id="sulsel">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#aca4" id="aca4" onclick="gorontalo()">Gorontalo</a></li>
+                <div class="dropdown" id="gorontalo">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir5" id="akhir5" onclick="sulbar()">Sulawesi Barat</a></li>
+                <div class="dropdown" id="sulbar">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Maluku</p>
+              <ul>
+                <li><a href="#maluku1" id="maluku1" onclick="maluku()">Maluku</a></li>
+                <div class="dropdown" id="maluku">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir6" id="akhir6" onclick="malut()">Maluku Utara</a></li>
+                <div class="dropdown" id="malut">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="menu">
+              <p>Papua</p>
+              <ul>
+                <li><a href="#papua1" id="papua1" onclick="papua()">Papua</a></li>
+                <div class="dropdown" id="papua">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+
+                <li><a href="#akhir7" id="akhir7" onclick="pabar()">Papua Barat</a></li>
+                <div class="dropdown" id="pabar">
+                  <li><a href=""># Informasi Umum</a></li>
+                  <li><a href=""># Budaya</a></li>
+                  <li><a href=""># Kuliner</a></li>
+                  <li><a href=""># Destinasi Wisata</a></li>
+                </div>
+              </ul>
+            </div>
+           
+          </div>
+       
+        <div class="footer-mobile">
+          
+        </div>
     </div>
 
-    <main>
-      <div class="main-page">
+
+   <main>
+    <div class="main-page">
         <div class="left">
           <div class="content">
             <p>Sumatra</p>
@@ -183,151 +420,141 @@
             </ul>
           </div>
         </div>
-
+  
         <div class="mid" id="paragraph">
           <p class="navgat">Provinsi > Aceh</p>
 
           <div class="informasi-umum section" id="informasi">
-            <h1>Aceh</h1>
-            <p class="aca">
-              Aceh adalah sebuah provinsi di Indonesia yang ibu kotanya berada di Banda Aceh. Aceh merupakan salah satu provinsi di Indonesia yang diberi status sebagai daerah istimewa dan juga diberi kewenangan otonomi khusus. Aceh
-              terletak di ujung utara pulau Sumatra dan merupakan provinsi paling barat di Indonesia. Menurut hasil sensus Badan Pusat Statistik tahun 2021, jumlah penduduk provinsi ini sekitar 5.333.733 jiwa. Letaknya dekat dengan
-              Kepulauan Andaman dan Nikobar di India dan terpisahkan oleh Laut Andaman. Aceh berbatasan dengan Teluk Benggala dan Laut Andaman di sebelah utara, Samudra Hindia di sebelah barat, Selat Malaka di sebelah timur, dan Sumatra
-              Utara di sebelah tenggara dan selatan.
-            </p>
-
-            <h1 class="border">Informasi Umum</h1>
-            <div class="table">
-              <table>
-                <tr>
-                  <th>Nama Provinsi</th>
-                  <th>Kode Wilayah</th>
-                  <th>Kode Internasional</th>
-                  <th>Singkatan Umum</th>
-                  <th>Ibu Kota</th>
-                  <th>Hari Libur</th>
-                  <th>Lambang</th>
-                </tr>
-                <tr>
-                  <td>Aceh</td>
-                  <td>11</td>
-                  <td>ID-AC</td>
-                  <td>-</td>
-                  <td>Banda Aceh</td>
-                  <td>Tdak Ada</td>
-                  <td><img class="logo" src="../Assets/logo-aceh.svg" alt="" /></td>
-                </tr>
-              </table>
-            </div>
+              <h1>Aceh</h1>
+              <p class="aca">
+                Aceh adalah sebuah provinsi di Indonesia yang ibu kotanya berada di
+                Banda Aceh. Aceh merupakan salah satu provinsi di Indonesia yang
+                diberi status sebagai daerah istimewa dan juga diberi kewenangan
+                otonomi khusus. Aceh terletak di ujung utara pulau Sumatra dan
+                merupakan provinsi paling barat di Indonesia. Menurut hasil sensus
+                Badan Pusat Statistik tahun 2021, jumlah penduduk provinsi ini sekitar
+                5.333.733 jiwa. Letaknya dekat dengan Kepulauan Andaman dan Nikobar di
+                India dan terpisahkan oleh Laut Andaman. Aceh berbatasan dengan Teluk
+                Benggala dan Laut Andaman di sebelah utara, Samudra Hindia di sebelah
+                barat, Selat Malaka di sebelah timur, dan Sumatra Utara di sebelah
+                tenggara dan selatan.
+              </p>
+      
+              <h1 class="border">Informasi Umum</h1>
+              <div class="table">
+                <table>
+                    <tr>
+                        <th>Nama Provinsi</th>
+                        <th>Kode Wilayah</th>
+                        <th>Kode Internasional</th>
+                        <th>Singkatan Umum</th>
+                        <th>Ibu Kota</th>
+                        <th>Hari Libur</th>
+                        <th>Lambang</th>
+                    </tr>
+                    <tr>
+                        <td>Aceh</td>
+                        <td>11</td>
+                        <td>ID-AC</td>
+                        <td>-</td>
+                        <td>Banda Aceh</td>
+                        <td>Tdak Ada</td>
+                        <td><img class="logo" src="../Assets/logo-aceh.svg" alt=""></td>
+                    </tr>
+                </table>
+              </div>
           </div>
-
+  
           <div class="budaya section">
-            <h1 class="border section" id="budaya">Budaya</h1>
-            <li id="rumahadat" class="section">Rumah Adat</li>
-            <img src="../Assets/Rumah Adat Aceh 1.png" alt="" />
-            <p class="aca">
-              Rumah tradisional Aceh dinamakan Rumoh Aceh. Rumah ini bertipe rumah panggung dengan 3 bagian utama dan 1 bagian tambahan. Tiga bagian utama dari rumah Aceh yaitu seuramoë keuë (serambi depan), seuramoë teungoh (serambi
-              tengah) dan seuramoë likôt (serambi belakang). Sedangkan 1 bagian tambahannya yaitu rumoh dapu (rumah dapur).
-            </p>
+              <h1 class="border section" id="budaya">Budaya</h1>
+              <li id="rumahadat" class="section">Rumah Adat</li>
+              <img src="../Assets/Rumah Adat Aceh 1.png" alt="">
+              <p class="aca">Rumah tradisional Aceh dinamakan Rumoh Aceh. Rumah ini bertipe rumah panggung dengan 3 bagian utama dan 1 bagian tambahan. Tiga bagian utama dari rumah Aceh yaitu seuramoë keuë (serambi depan), seuramoë teungoh (serambi tengah) dan seuramoë likôt (serambi belakang). Sedangkan 1 bagian tambahannya yaitu rumoh dapu (rumah dapur).</p>
 
-            <li id="tarian" class="section">Tarian Tradisional</li>
-            <p class="aca">Aceh memiliki banyak tarian dari 9 etnis yang ada. Beberapa tarian yang terkenal di tingkat nasional dan bahkan dunia merupakan tarian yang berasal dari Aceh, seperti Tari Saman dan Tari Seudati.</p>
-            <div class="tarian" class="section">
-              <div class="card">
-                <img src="../Assets/TariSaman.jpeg" alt="" />
-                <p class="aca-card">Tari Saman merupakan salah satu media untuk menyampaikan pesan atau dakwah. Tarian ini mencerminkan pendidikan, keagamaan, sopan santun, kepahlawanan, kekompakan dan kebersamaan.</p>
+              <li id="tarian" class="section">Tarian Tradisional</li>
+              <p class="aca">Aceh memiliki banyak tarian dari 9 etnis yang ada. Beberapa tarian yang terkenal di tingkat nasional dan bahkan dunia merupakan tarian yang berasal dari Aceh, seperti Tari Saman dan Tari Seudati.</p>
+              <div class="tarian" class="section">
+                <div class="card">
+                  <img src="../Assets/TariSaman.jpeg" alt="">
+                  <p class="aca-card ">Tari Saman merupakan salah satu media untuk menyampaikan pesan atau dakwah. Tarian ini mencerminkan pendidikan, keagamaan, sopan santun, kepahlawanan, kekompakan dan kebersamaan.</p>
+                </div>
+                <div class="card">
+                  <img src="../Assets/TariSeudati.png" alt="" style="width:104%;">
+                  <p class="aca-card">Tari Seudati adalah salah satu tarian tradisional yang berasal dari daerah Aceh. Tarian ini biasanya ditarikan oleh sekelompok penari pria dengan gerakannya yang khas dan enerjik serta diiringi oleh lantunan syair dan suara hentakan para penari.</p>
+                </div>
               </div>
-              <div class="card">
-                <img src="../Assets/TariSeudati.png" alt="" style="width: 104%" />
-                <p class="aca-card">
-                  Tari Seudati adalah salah satu tarian tradisional yang berasal dari daerah Aceh. Tarian ini biasanya ditarikan oleh sekelompok penari pria dengan gerakannya yang khas dan enerjik serta diiringi oleh lantunan syair dan
-                  suara hentakan para penari.
-                </p>
+
+              <li id="bahasa" class="section">Bahasa Daerah</li>
+              <p class="aca">Bahasa daerah yang paling banyak penuturnya adalah bahasa Aceh yang dipakai oleh suku Aceh. Selain itu juga terdapat bahasa Gayo, Alas, Kluet, Singkil, Jamee dan Melayu Tamiang. Di Simeulue terdapat 3 bahasa yaitu bahasa Devayan, Sigulai, dan Leukon. Selain itu juga terdapat bahasa Haloban di Pulau Banyak. Beberapa bahasa daerah dari bagian Indonesia lainnya juga dipertuturkan oleh sebagian penduduk di Provinsi Aceh. Di antaranya, yaitu bahasa Jawa yang tersebar di berbagai wilayah transmigrasi di seluruh Aceh.
+              </p>
+
+              <li id="tradisi" class="section">Tradisi Adat</li>
+              <div class="tradisi">
+              <img src="../Assets/Tradisi adat aceh 1.png" alt="" style="width: 80%; display: flex; justify-content: center;">
               </div>
+              <p class="aca">Aceh merupakan kawasan yang sangat kaya dengan seni budaya. Aceh mempunyai aneka tradisi salah satunya seperti Tradisi Peusijuek. Peusijuek adalah sebuah prosesi adat dalam budaya masyarakat Aceh yang masih dipraktikan hingga saat ini. Tradisi peusijuek ini dilakukan pada hampir semua kegiatan adat dalam kehidupan masyarakat di Aceh. Misalnya ketika memulai sebuah usaha, menyelesaikan persengketaan, terlepas atau selesai dari musibah, menempati rumah baru, merayakan kelulusan, memberangkatkan dan menyambut kedatangan haji, kembalinya keluarga dari perantauan dan masih banyak lagi.
+              </p>
+
+              <li id="senjata" class="section">Senjata Tradisional</li>
+              <img src="../Assets/Senjata Traditional Aceh 1.png" alt="">
+              <p class="aca">Rencong adalah senjata tradisional bangsa Aceh, bentuknya menyerupai huruf L, dan bila dilihat lebih dekat bentuknya merupakan kaligrafi tulisan bismillah. Rencong termasuk dalam kategori belati. Selain rencong, bangsa Aceh juga memiliki beberapa senjata khas lainnya, seperti sikin panyang, peurise awe, peurise teumaga, siwah, geuliwang dan peudeueng.</p>
+
+              <li id="lagu" class="section">Lagu Daerah</li>
+              <p class="aca">Bungong Jeumpa adalah lagu daerah yang berasal dari Aceh. Bungong Jeumpa dalam bahasa Aceh berarti bunga cempaka. Lagu ini memiliki arti penting dalam budaya suku Aceh yang menggambarkan semangat dan keindahan Tanah Aceh dan menjadi simbol bunga khas di Kesultanan Aceh.</p>
+              <audio controls>
+                <source src="../Assets/Aceh_-_Bungong_Jeumpa.wav" type="audio/mpeg">
+              </audio>
+             </div>
+
+             <div class="kuliner section" id="kuliner" >
+              <h1 class="border">Kuliner</h1>
+              <p class="aca">Aceh mempunyai aneka jenis makanan yang khas. salah satu kuliner khas Aceh yang juga sangat terkenal bahkan hingga ke mancanegara adalah Mi Aceh, sejenis mi kuning basah yang diracik dengan bumbu khas nan pedas.</p>
+              <img src="../Assets/Mie_Aceh_Kepiting.jpg" alt="">
+              <p class="aca">Selain itu makanan yang khas Aceh lain yakni, Timphan. Timphan adalah penganan kecil sejenis lepat. Bahan untuk membuat timphan terdiri dari tepung, pisang, dan santan. Semua bahan ini kemudian diaduk-aduk sampai kenyal. Lalu dibuat memanjang dan di dalamnya diisi dengan serikaya atau kelapa parut yang dicampur dengan gula. Kemudian adonan ini dibungkus dengan daun pisang dan dikukus (rebus tanpa direndam air) selama satu jam.
+              </p>
+              <img src="../Assets/Kuliner aceh 1.png" alt="">
+             </div>
+
+             <div class="destinasi section" id="wisata">
+              <h1 class="border">Destinasi Wisata</h1>
+              <p class="aca">Salah satu wisata alam yang terkenal di Aceh adalah wisata pantai, pantai pasir putih yang terkenal diantaranya Pantai Lampuuk di Aceh Besar dan Pantai Pasi Saka di Aceh Jaya.</p>
+              <img src="../Assets/wisata.jpeg" alt="">
+              <p class="aca">
+                Selain itu Aceh juga dikenal dengan cakupan hutan yang masih cukup lestari seperti Taman Nasional Gunung Leuser. Beberapa satwa endemis Sumatra masih lazim ditemukan di Aceh seperti orangutan, gajah, harimau dan badak.
+              </p>
+              <img src="../Assets/wisata_aceh2.jpeg" alt="">
+             </div>
+
+             <a href="#" class="navgat-bottom">Sumatra Utara  > </a>
+
+             <div class="right">
+              <h1><a href="">On This Page</a></h1>
+              <p><a href="#informasi" class="nav_links active">Informasi Umum</a></p>
+              <p><a href="#budaya" class="nav_links">Budaya</a></p>
+              <ul>
+                <li><a href="#rumahadat" class="nav_links">Rumah Adat</a></li>
+                <li><a href="#tarian" class="nav_links">Tarian Tradisional</a></li>
+                <li><a href="#bahasa" class="nav_links">Bahasa Daerah</a></li>
+                <li><a href="#tradisi" class="nav_links">Tradisi Adat</a></li>
+                <li><a href="#senjata" class="nav_links">Senjata Tradisional</a></li>
+                <li><a href="#lagu" class="nav_links">Lagu Daerah</a></li>
+              </ul>
+              <p><a href="#kuliner" class="nav_links">Kuliner</a></p>
+              <p><a href="#wisata" class="nav_links">Destinasi Wisata</a></p>
             </div>
-
-            <li id="bahasa" class="section">Bahasa Daerah</li>
-            <p class="aca">
-              Bahasa daerah yang paling banyak penuturnya adalah bahasa Aceh yang dipakai oleh suku Aceh. Selain itu juga terdapat bahasa Gayo, Alas, Kluet, Singkil, Jamee dan Melayu Tamiang. Di Simeulue terdapat 3 bahasa yaitu bahasa
-              Devayan, Sigulai, dan Leukon. Selain itu juga terdapat bahasa Haloban di Pulau Banyak. Beberapa bahasa daerah dari bagian Indonesia lainnya juga dipertuturkan oleh sebagian penduduk di Provinsi Aceh. Di antaranya, yaitu bahasa
-              Jawa yang tersebar di berbagai wilayah transmigrasi di seluruh Aceh.
-            </p>
-
-            <li id="tradisi" class="section">Tradisi Adat</li>
-            <div class="tradisi">
-              <img src="../Assets/Tradisi adat aceh 1.png" alt="" style="width: 80%; display: flex; justify-content: center" />
-            </div>
-            <p class="aca">
-              Aceh merupakan kawasan yang sangat kaya dengan seni budaya. Aceh mempunyai aneka tradisi salah satunya seperti Tradisi Peusijuek. Peusijuek adalah sebuah prosesi adat dalam budaya masyarakat Aceh yang masih dipraktikan hingga
-              saat ini. Tradisi peusijuek ini dilakukan pada hampir semua kegiatan adat dalam kehidupan masyarakat di Aceh. Misalnya ketika memulai sebuah usaha, menyelesaikan persengketaan, terlepas atau selesai dari musibah, menempati
-              rumah baru, merayakan kelulusan, memberangkatkan dan menyambut kedatangan haji, kembalinya keluarga dari perantauan dan masih banyak lagi.
-            </p>
-
-            <li id="senjata" class="section">Senjata Tradisional</li>
-            <img src="../Assets/Senjata Traditional Aceh 1.png" alt="" />
-            <p class="aca">
-              Rencong adalah senjata tradisional bangsa Aceh, bentuknya menyerupai huruf L, dan bila dilihat lebih dekat bentuknya merupakan kaligrafi tulisan bismillah. Rencong termasuk dalam kategori belati. Selain rencong, bangsa Aceh
-              juga memiliki beberapa senjata khas lainnya, seperti sikin panyang, peurise awe, peurise teumaga, siwah, geuliwang dan peudeueng.
-            </p>
-
-            <li id="lagu" class="section">Lagu Daerah</li>
-            <p class="aca">
-              Bungong Jeumpa adalah lagu daerah yang berasal dari Aceh. Bungong Jeumpa dalam bahasa Aceh berarti bunga cempaka. Lagu ini memiliki arti penting dalam budaya suku Aceh yang menggambarkan semangat dan keindahan Tanah Aceh dan
-              menjadi simbol bunga khas di Kesultanan Aceh.
-            </p>
-            <audio controls>
-              <source src="../Assets/Aceh_-_Bungong_Jeumpa.wav" type="audio/mpeg" />
-            </audio>
-          </div>
-
-          <div class="kuliner section" id="kuliner">
-            <h1 class="border">Kuliner</h1>
-            <p class="aca">
-              Aceh mempunyai aneka jenis makanan yang khas. salah satu kuliner khas Aceh yang juga sangat terkenal bahkan hingga ke mancanegara adalah Mi Aceh, sejenis mi kuning basah yang diracik dengan bumbu khas nan pedas.
-            </p>
-            <img src="../Assets/Mie_Aceh_Kepiting.jpg" alt="" />
-            <p class="aca">
-              Selain itu makanan yang khas Aceh lain yakni, Timphan. Timphan adalah penganan kecil sejenis lepat. Bahan untuk membuat timphan terdiri dari tepung, pisang, dan santan. Semua bahan ini kemudian diaduk-aduk sampai kenyal. Lalu
-              dibuat memanjang dan di dalamnya diisi dengan serikaya atau kelapa parut yang dicampur dengan gula. Kemudian adonan ini dibungkus dengan daun pisang dan dikukus (rebus tanpa direndam air) selama satu jam.
-            </p>
-            <img src="../Assets/Kuliner aceh 1.png" alt="" />
-          </div>
-
-          <div class="destinasi section" id="wisata">
-            <h1 class="border">Destinasi Wisata</h1>
-            <p class="aca">Salah satu wisata alam yang terkenal di Aceh adalah wisata pantai, pantai pasir putih yang terkenal diantaranya Pantai Lampuuk di Aceh Besar dan Pantai Pasi Saka di Aceh Jaya.</p>
-            <img src="../Assets/wisata.jpeg" alt="" />
-            <p class="aca">
-              Selain itu Aceh juga dikenal dengan cakupan hutan yang masih cukup lestari seperti Taman Nasional Gunung Leuser. Beberapa satwa endemis Sumatra masih lazim ditemukan di Aceh seperti orangutan, gajah, harimau dan badak.
-            </p>
-            <img src="../Assets/wisata_aceh2.jpeg" alt="" />
-          </div>
-
-          <a href="Sumatra Utara" class="navgat-bottom">Sumatra Utara > </a>
-        </div>
-
-        <div class="right">
-          <h1><a href="">On This Page</a></h1>
-          <p><a href="#informasi" class="nav_links active">Informasi Umum</a></p>
-          <p><a href="#budaya" class="nav_links">Budaya</a></p>
-          <ul>
-            <li><a href="#rumahadat" class="nav_links">Rumah Adat</a></li>
-            <li><a href="#tarian" class="nav_links">Tarian Tradisional</a></li>
-            <li><a href="#bahasa" class="nav_links">Bahasa Daerah</a></li>
-            <li><a href="#tradisi" class="nav_links">Tradisi Adat</a></li>
-            <li><a href="#senjata" class="nav_links">Senjata Tradisional</a></li>
-            <li><a href="#lagu" class="nav_links">Lagu Daerah</a></li>
-          </ul>
-          <p><a href="#kuliner" class="nav_links">Kuliner</a></p>
-          <p><a href="#wisata" class="nav_links">Destinasi Wisata</a></p>
+ 
         </div>
       </div>
 
       <footer class="footer">
-        <p class="foot">© 2023 Cultriad. All rights reserved.</p>
+        <p class="foot">
+        © 2023 Cultriad. All rights reserved.
+        </p>
       </footer>
-    </main>
 
-    <script src="../JS/index.js"></script>
+   </main>
+
+
+   <script src="/index.js"></script>
   </body>
 </html>
